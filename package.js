@@ -3,7 +3,8 @@ Package.describe({
 });
 
 Package.on_use(function (api, where) {
-  where = where || ['client', 'server'];
-  api.use(['underscore'], where);
+  where = 'client';
+  api.use(['underscore','session'], where);
   api.add_files('translator.js', where);
+  api.export('__');
 });

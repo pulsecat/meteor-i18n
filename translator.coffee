@@ -92,7 +92,6 @@ Meteor.setLocale = (locale) ->
 Meteor.getLocale = ->
   Session.get('_TranslatorService.locale')
 
-
 # Public message configuration with system messages.
 Meteor.i18nMessages = {} unless Meteor.i18nMessages?
 Meteor.i18nMessages._meteor = {} unless Meteor.i18nMessages._meteor?

@@ -112,6 +112,6 @@
 
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
-  root.__ = Meteor._TranslatorService.translate;
+  __ = root.__ = Meteor._TranslatorService.translate;
 
 }).call(this);
